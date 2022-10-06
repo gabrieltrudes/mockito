@@ -46,7 +46,7 @@ class GeradorDePagamentoTest {
 	void deveriaCriarPagamentoParaVencedorDoLeilao() {
 		Leilao leilao = leilao();
 		Lance vencedor = leilao.getLanceVencedor();
-		LocalDate data = LocalDate.of(2022, 8, 15);
+		LocalDate data = LocalDate.now();
 		
 		Instant instant = data.atStartOfDay(ZoneId.systemDefault()).toInstant();
 		
